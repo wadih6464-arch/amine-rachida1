@@ -154,14 +154,14 @@ function ScratchBall({ value, label, delay = 0 }: BallProps) {
               exit={{ opacity: 0, scale: 1.05 }}
               transition={{ duration: 0.6 }}
               className="absolute inset-0 h-full w-full cursor-grab touch-none rounded-full"
-              onPointerDown={(e) => {
+              onPointerDown={(e: React.PointerEvent<HTMLCanvasElement>) => {
                 drawing.current = true;
                 (e.target as HTMLCanvasElement).setPointerCapture(e.pointerId);
                 const p = getPos(e);
                 lastPoint.current = p;
                 scratch(p.x, p.y);
               }}
-              onPointerMove={(e) => {
+              onPointerMove={(e: React.PointerEvent<HTMLCanvasElement>) => {
                 if (!drawing.current) return;
                 const p = getPos(e);
                 scratch(p.x, p.y);
