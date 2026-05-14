@@ -5,7 +5,7 @@ const items = [
     icon: "✦",
     label: "L'heure",
     main: "À partir",
-    sub: "de 17h00",
+    sub: "de 18h00",
   },
   {
     icon: "❀",
