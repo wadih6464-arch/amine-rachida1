@@ -112,7 +112,13 @@ function ScratchBall({ value, label, delay = 0 }: BallProps) {
             border: "1px solid oklch(0.78 0.13 80 / 0.5)",
           }}
         >
-          <span className="font-display text-3xl font-semibold not-italic text-gradient-gold sm:text-5xl md:text-6xl">
+          <span
+            className={`font-display font-semibold not-italic text-gradient-gold ${
+              value.length > 2
+                ? "text-xl sm:text-3xl md:text-4xl"
+                : "text-3xl sm:text-5xl md:text-6xl"
+            }`}
+          >
             {value}
           </span>
         </div>
