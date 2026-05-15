@@ -49,7 +49,7 @@ function Index() {
 
   return (
     <main className="relative min-h-screen overflow-x-hidden">
-      <GoldParticles />
+      
 
       <CurtainIntro onEnter={handleEnter} />
 
