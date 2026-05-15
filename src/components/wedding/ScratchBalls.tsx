@@ -113,11 +113,12 @@ function ScratchBall({ value, label, delay = 0 }: BallProps) {
           }}
         >
           <span
-            className={`font-display font-semibold not-italic text-gradient-gold ${
+            className={`font-body font-medium not-italic tabular-nums tracking-tight text-gradient-gold ${
               value.length > 2
-                ? "text-xl sm:text-3xl md:text-4xl"
-                : "text-3xl sm:text-5xl md:text-6xl"
+                ? "text-2xl sm:text-4xl md:text-5xl"
+                : "text-4xl sm:text-6xl md:text-7xl"
             }`}
+            style={{ fontVariantNumeric: "tabular-nums", fontFeatureSettings: '"tnum" 1' }}
           >
             {value}
           </span>
