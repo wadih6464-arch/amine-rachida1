@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
 });
 
 const MUSIC_SRC =
-  "https://cdn.pixabay.com/audio/2022/10/30/audio_347111d654.mp3";
+  "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3";
 
 function Index() {
   const [entered, setEntered] = useState(false);
