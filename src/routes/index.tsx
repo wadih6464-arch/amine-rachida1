@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
 });
 
 const MUSIC_SRC =
-  "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3";
+  "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Meditation%20Impromptu%2001.mp3";
 
 function Index() {
   const [entered, setEntered] = useState(false);
