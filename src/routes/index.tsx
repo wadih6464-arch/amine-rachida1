@@ -13,8 +13,9 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const MUSIC_SRC =
-  "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Meditation%20Impromptu%2001.mp3";
+import musicUrl from "@/assets/music.mp3";
+
+const MUSIC_SRC = musicUrl;
 
 function Index() {
   const [entered, setEntered] = useState(false);
