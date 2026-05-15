@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useRef, useState } from "react";
 import { CurtainIntro } from "@/components/wedding/CurtainIntro";
-import { GoldParticles } from "@/components/wedding/GoldParticles";
+
 import { ScratchBalls } from "@/components/wedding/ScratchBalls";
 import { Details } from "@/components/wedding/Details";
 import { Countdown } from "@/components/wedding/Countdown";
@@ -49,7 +49,7 @@ function Index() {
 
   return (
     <main className="relative min-h-screen overflow-x-hidden">
-      <GoldParticles />
+      
 
       <CurtainIntro onEnter={handleEnter} />
 
